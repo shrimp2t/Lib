@@ -1,3 +1,5 @@
+<?php
+
 /**
 * Get all hooks of filter/action
 */
