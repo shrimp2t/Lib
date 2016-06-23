@@ -1,3 +1,7 @@
+/**
+* Get all hooks of filter/action
+*/
+
 function print_filters_for( $hook = '' ) {
     global $wp_filter;
     if( empty( $hook ) || !isset( $wp_filter[$hook] ) ) return;
