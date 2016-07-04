@@ -1,3 +1,19 @@
+/**
+ * Plugin Name:       Admin Screen Info
+ * Plugin URI:        http:shrimp2t.com/
+ * Description:       Advance Ajax WordPress Login & Register Form.
+ * Version:           1.0.0
+ * Author:            SmoothThemes
+ * Author URI:        http:shrimp2t.com/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       wpu
+ * Domain Path:       /languages
+ */
+
+
+
+
 // ==================for debug===============================
 if(!function_exists('s_help_screen_help')){
     add_action( 'contextual_help', 's_help_screen_help', 10, 3 );
