@@ -3,7 +3,7 @@
 /*
 Plugin Name: Get hook info
 Plugin URI: https://github.com/shrimp2t/Lib/blob/master/get-hook-info.php
-Description: This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly</cite> in the upper right of your admin screen on every page.
+Description: Show hook info at the bottom of source code.
 Author: Matt Shrimp2t
 Version: 1.6
 Author URI: https://github.com/shrimp2t
@@ -31,9 +31,11 @@ function s_footer_echo_hooks(){
     if ( ! $hook ) {
         return ;
     }
+    echo "\r\n<!-- HOOK-INFO -->\r\n";
+
     echo "\r\n<!--\r\n";
-    echo s_print_filters_for();
+    echo s_print_filters_for( $hook );
     echo "\r\n-->\r\n";
 }
 
-add_action( 'wp_footer', 'footer_echo_hooks', 99 );
+add_action( 'wp_footer', 's_footer_echo_hooks', 9999 );
