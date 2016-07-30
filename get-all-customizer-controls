@@ -1,0 +1,25 @@
+<?php
+/**
+ * Plugin Name:       Get All Customizer Control Keys
+ * Plugin URI:        http:shrimp2t.com/
+ * Description:       Advance Ajax WordPress Login & Register Form.
+ * Version:           1.0.0
+ * Author:            SmoothThemes
+ * Author URI:        http:shrimp2t.com/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       wpu
+ * Domain Path:       /languages
+ */
+
+
+add_action( 'customize_controls_print_footer_scripts', 's_get_all_c_control_keys' );
+function s_get_all_c_control_keys(){
+    global $wp_customize;
+    echo "\n\n<!-- s_get_all_c_control_keys \n\n";
+    foreach (  $wp_customize->controls()  as $k => $c )  {
+        echo "<key name='{$k}' />\n";
+    }
+    echo "\n\n-->\n\n";
+
+}
