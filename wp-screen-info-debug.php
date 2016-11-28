@@ -3,7 +3,7 @@
 /**
 * Plugin Name:       Admin Screen Info
 * Plugin URI:        http:shrimp2t.com/
-* Description:       Advance Ajax WordPress Login & Register Form.
+* Description:       Update Screen Info
 * Version:           1.0.0
 * Author:            SmoothThemes
 * Author URI:        http:shrimp2t.com/
